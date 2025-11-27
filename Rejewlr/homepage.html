@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejewlr – Personalised Jewellery Redesign</title>
     <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/footer.css"> <!-- NEW -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
@@ -51,20 +52,36 @@
     <p>"Rejewlr gave my grandmother’s ring a stunning modern redesign!" – Clara H.</p>
 </section>
 
-<!-- ONLY THIS FOOTER PLACEHOLDER -->
 <div id="footer-placeholder"></div>
 
 <script src="js/scripts.js"></script>
 <script>
+    // Load Navbar
     fetch('navbar.html')
         .then(response => response.text())
-        .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+
+            // Highlight current page link
+            const current = window.location.pathname.split("/").pop();
+            document.querySelectorAll('.navbar ul li a').forEach(link => {
+                if(link.getAttribute('href') === current) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        })
         .catch(err => console.error('Error loading navbar:', err));
-    
+
+    // Load Footer
     fetch('footer.html')
         .then(response => response.text())
-        .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
         .catch(err => console.error('Error loading footer:', err));
 </script>
+
 </body>
 </html>

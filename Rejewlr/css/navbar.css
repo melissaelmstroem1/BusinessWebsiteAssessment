@@ -1,25 +1,41 @@
-/* NAVBAR STYLING */
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    /* Transparent background */
+    padding: 15px 40px;
+    font-family: 'Arial', sans-serif;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .navbar .logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #000;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.05);
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+}
+
+.navbar ul li {
+    position: relative;
 }
 
 .navbar ul li a {
+    position: relative;
     color: black;
     text-decoration: none;
     padding: 8px 12px;
@@ -27,41 +43,65 @@
     transition: color 0.3s;
 }
 
+/* Hover underline animation */
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #e3dc07; /* gold underline */
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li a.active::after {
+    width: 100%; /* underline appears on hover and stays on active */
+}
+
 .navbar ul li a:hover {
-    color: #d8b800; /* Hover gold */
+    color: #e3dc07;
 }
 
-.navbar ul li a.active {
-    color: black;
+/* Hamburger Menu For Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    order: 2;
 }
 
-.navbar ul li a.active:hover {
-    color: #b49900;
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
-.cta-btn {
-    font-weight: bold;
-}
-
-.cta-btn:hover {
-    color: #d8b800;
-}
-
-/* Responsive Navbar */
+/* Mobile Responsive */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-        background: white;
         position: absolute;
-        top: 60px;
-        right: 20px;
+        top: 70px;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        width: 200px;
+        gap: 15px;
         padding: 20px;
-        display: none;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        display: none;
+        border-radius: 8px;
     }
 
     .navbar.active ul {
+        display: flex;
+    }
+
+    .hamburger {
         display: flex;
     }
 }

@@ -1,9 +1,7 @@
-/* =====================
-   Footer Styles – Professional & Modern
-   ===================== */
+/* Footer Style */
 
 footer {
-    background-color: #121212; /* Deep black for elegance */
+    background-color: #121212;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
     line-height: 1.5;
@@ -18,14 +16,14 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #333; /* subtle separation from bottom footer */
+    border-bottom: 1px solid #333;
 }
 
 /* Branding / Logo Section */
 .footer-branding .footer-logo {
     font-size: 28px;
     font-weight: bold;
-    color: #d8b800; /* Gold accent */
+    color: #e3dc07; 
     margin-bottom: 10px;
 }
 
@@ -36,7 +34,7 @@ footer {
 
 /* Quick Links & Contact & Social Sections */
 footer h4 {
-    color: #d8b800;
+    color: #e3dc07;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -63,7 +61,7 @@ footer a {
 }
 
 .footer-links ul li a:hover {
-    color: #d8b800;
+    color: #e3dc07;
     transform: translateX(3px);
 }
 
@@ -75,7 +73,7 @@ footer a {
 }
 
 .footer-contact a:hover {
-    color: #d8b800;
+    color: #e3dc07;
 }
 
 /* Social Buttons */
@@ -83,15 +81,15 @@ footer a {
     display: inline-block;
     margin-right: 12px;
     padding: 8px 15px;
-    border: 1px solid #d8b800;
+    border: 1px solid #e3dc07;
     border-radius: 5px;
-    color: #d8b800;
+    color: #e3dc07;
     font-size: 14px;
     transition: all 0.3s;
 }
 
 .footer-social a.social-btn:hover {
-    background-color: #d8b800;
+    background-color: #e3dc07;
     color: #121212;
     transform: scale(1.1);
 }

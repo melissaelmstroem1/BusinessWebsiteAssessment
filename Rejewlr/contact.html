@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Rejewlr</title>
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css"> <!-- Footer styling -->
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css"> <!-- Navbar styling -->
 </head>
 <body>
 
@@ -77,7 +78,19 @@
     // Load Navbar
     fetch('navbar.html')
         .then(response => response.text())
-        .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+
+            // Highlight current page link dynamically
+            const current = window.location.pathname.split("/").pop();
+            document.querySelectorAll('.navbar ul li a').forEach(link => {
+                if(link.getAttribute('href') === current) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        })
         .catch(err => console.error('Error loading navbar:', err));
 
     // Load Footer
@@ -97,5 +110,6 @@
         form.reset(); 
     });
 </script>
+
 </body>
 </html>
