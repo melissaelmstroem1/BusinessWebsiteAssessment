@@ -3,93 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Rejewlr</title>
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css"> <!-- Footer styling -->
 </head>
 <body>
 
+<!-- Navbar Placeholder -->
 <div id="navbar-placeholder"></div>
 
+<!-- Hero Section -->
+<header class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to help redesign your jewellery into something beautiful. Reach out for expert advice and personalised design suggestions.</p>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-container">
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+            <label>Name</label>
+            <input type="text" placeholder="Your full name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Your email address" required>
+
+            <label>Message</label>
+            <textarea placeholder="Describe your redesign idea or enquiry..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="successMsg" class="success-msg">Your message was successfully sent!</div>
+    </div>
+
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>We specialise in personalised jewellery redesign. Share your ideas with us, and we’ll transform your old or unused pieces into unique treasures.</p>
+
+        <p><strong>Email:</strong> contact@redesignjewellery.com</p>
+        <p><strong>Phone:</strong> +44 7564 123 987</p>
+        <p><strong>Location:</strong> London, United Kingdom</p>
+
+        <div class="icons">
+            <a href="#"><div class="icon">📧</div></a>
+            <a href="#"><div class="icon">📞</div></a>
+            <a href="#"><div class="icon">📍</div></a>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+    <h2>Our Location</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.805267479753!2d-0.12775868426001996!3d51.50735097963547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333e7d2f85%3A0x8f0eac2a1d3bbf71!2sLondon!5e0!3m2!1sen!2suk!4v1690700000000!5m2!1sen!2suk" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts for dynamic navbar/footer + form -->
 <script src="js/scripts.js"></script>
 <script>
+    // Load Navbar
     fetch('navbar.html')
         .then(response => response.text())
         .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading navbar:', err));
+
+    // Load Footer
     fetch('footer.html')
         .then(response => response.text())
         .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading footer:', err));
+
+    // Contact form submission
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('successMsg');
+    successMsg.style.display = 'none';
+
+    form.addEventListener('submit', function(e){
+        e.preventDefault(); 
+        successMsg.style.display = 'block';
+        form.reset(); 
+    });
 </script>
-
-    <header class="hero">
-        <h1>Contact Us</h1>
-        <p>We’d love to help redesign your jewellery into something beautiful. Reach out for expert advice and personalised design suggestions.</p>
-    </header>
-
-    <section class="contact-container">
-
-        <div class="contact-form">
-            <h2>Send Us a Message</h2>
-
-            <form id="contactForm">
-                <label>Name</label>
-                <input type="text" placeholder="Your full name" required>
-
-                <label>Email</label>
-                <input type="email" placeholder="Your email address" required>
-
-                <label>Message</label>
-                <textarea placeholder="Describe your redesign idea or enquiry..." required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-
-            <div id="successMsg" class="success-msg">Your message was successfully sent!</div>
-        </div>
-
-        <div class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>We specialise in personalised jewellery redesign. Share your ideas with us, and we’ll transform your old or unused pieces into unique treasures.</p>
-
-            <p><strong>Email:</strong> contact@redesignjewellery.com</p>
-            <p><strong>Phone:</strong> +44 7564 123 987</p>
-            <p><strong>Location:</strong> London, United Kingdom</p>
-
-            <div class="icons">
-                <a href="#"><div class="icon">📧</div></a>
-                <a href="#"><div class="icon">📞</div></a>
-                <a href="#"><div class="icon">📍</div></a>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="map-section">
-        <h2>Our Location</h2>
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.805267479753!2d-0.12775868426001996!3d51.50735097963547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333e7d2f85%3A0x8f0eac2a1d3bbf71!2sLondon!5e0!3m2!1sen!2suk!4v1690700000000!5m2!1sen!2suk" 
-                width="100%" 
-                height="350" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
-    <script>
-        const form = document.getElementById('contactForm');
-        const successMsg = document.getElementById('successMsg');
-
-        form.addEventListener('submit', function(e){
-            e.preventDefault(); 
-            successMsg.style.display = 'block';
-            form.reset(); 
-        });
-    </script>
-
-    <div id="footer-placeholder"></div>
 </body>
 </html>

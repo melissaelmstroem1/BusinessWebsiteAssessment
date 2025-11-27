@@ -5,91 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - ReDesign Jewellery</title>
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css"> <!-- Include footer styles -->
 </head>
 <body>
 
+<!-- Navbar Placeholder -->
 <div id="navbar-placeholder"></div>
 
+<!-- Main Content -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Transform Your Old Jewellery Into Something New</h1>
+        <p>We specialise in personalised jewellery redesign — turning your unused gold and silver pieces into fresh, meaningful designs.</p>
+    </div>
+</section>
+
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+        At <strong>Rejewlr</strong>, we believe every piece of jewellery has a story.
+        Our mission is to help women revive their old or forgotten gold and silver pieces by 
+        reshaping, resizing, or completely redesigning them into modern, custom creations.
+    </p>
+</section>
+
+<section class="process">
+    <h2>How It Works</h2>
+    <div class="steps-container">
+        <div class="step">
+            <h3>1. Upload Your Jewellery</h3>
+            <p>Send us clear images of your old jewellery through our secure upload page.</p>
+        </div>
+        <div class="step">
+            <h3>2. Tell Us Your Vision</h3>
+            <p>Describe what you want — resizing, reshaping, melting down, or a full redesign.</p>
+        </div>
+        <div class="step">
+            <h3>3. Receive Expert Advice</h3>
+            <p>Our designers review your item and provide custom redesign suggestions.</p>
+        </div>
+        <div class="step">
+            <h3>4. Approve & Transform</h3>
+            <p>Once you’re happy, our experts bring your new jewellery design to life.</p>
+        </div>
+    </div>
+</section>
+
+<section class="why-us">
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li>✔ Personalised designs tailored to your preferences</li>
+        <li>✔ Sustainable craftsmanship using your existing materials</li>
+        <li>✔ Professional jewellers with 10+ years of experience</li>
+        <li>✔ Secure and simple digital upload process</li>
+        <li>✔ Affordable redesign options for all budgets</li>
+    </ul>
+</section>
+
+<section class="story">
+    <h2>Our Story</h2>
+    <p>
+        ReDesign Jewellery was built on the idea that jewellery should evolve with you.
+        Many women own sentimental pieces they no longer wear — whether outdated, damaged, 
+        or simply not their style anymore. Our online service makes it easy to breathe new life 
+        into those pieces without ever leaving your home.
+    </p>
+    <p>
+        We combine modern digital tools with expert jewellery craftsmanship to create designs 
+        that feel personal, meaningful, and truly unique.
+    </p>
+</section>
+
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts for dynamic navbar & footer -->
 <script src="js/scripts.js"></script>
 <script>
+    // Load Navbar
     fetch('navbar.html')
         .then(response => response.text())
         .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading navbar:', err));
 
+    // Load Footer
     fetch('footer.html')
         .then(response => response.text())
         .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading footer:', err));
 </script>
-
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Transform Your Old Jewellery Into Something New</h1>
-            <p>We specialise in personalised jewellery redesign — turning your unused gold and silver pieces into fresh, meaningful designs.</p>
-        </div>
-    </section>
-
-    <section class="mission">
-        <h2>Our Mission</h2>
-        <p>
-            At <strong>Rejewlr</strong>, we believe every piece of jewellery has a story.
-            Our mission is to help women revive their old or forgotten gold and silver pieces by 
-            reshaping, resizing, or completely redesigning them into modern, custom creations.
-        </p>
-    </section>
-
-    <section class="process">
-        <h2>How It Works</h2>
-
-        <div class="steps-container">
-            <div class="step">
-                <h3>1. Upload Your Jewellery</h3>
-                <p>Send us clear images of your old jewellery through our secure upload page.</p>
-            </div>
-
-            <div class="step">
-                <h3>2. Tell Us Your Vision</h3>
-                <p>Describe what you want — resizing, reshaping, melting down, or a full redesign.</p>
-            </div>
-
-            <div class="step">
-                <h3>3. Receive Expert Advice</h3>
-                <p>Our designers review your item and provide custom redesign suggestions.</p>
-            </div>
-
-            <div class="step">
-                <h3>4. Approve & Transform</h3>
-                <p>Once you’re happy, our experts bring your new jewellery design to life.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="why-us">
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>✔ Personalised designs tailored to your preferences</li>
-            <li>✔ Sustainable craftsmanship using your existing materials</li>
-            <li>✔ Professional jewellers with 10+ years of experience</li>
-            <li>✔ Secure and simple digital upload process</li>
-            <li>✔ Affordable redesign options for all budgets</li>
-        </ul>
-    </section>
-
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-            ReDesign Jewellery was built on the idea that jewellery should evolve with you.
-            Many women own sentimental pieces they no longer wear — whether outdated, damaged, 
-            or simply not their style anymore. Our online service makes it easy to breathe new life 
-            into those pieces without ever leaving your home.
-        </p>
-        <p>
-            We combine modern digital tools with expert jewellery craftsmanship to create designs 
-            that feel personal, meaningful, and truly unique.
-        </p>
-    </section>
-
-    <div id="footer-placeholder"></div>
 </body>
 </html>

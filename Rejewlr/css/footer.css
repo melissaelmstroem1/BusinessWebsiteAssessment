@@ -1,98 +1,118 @@
-/* Footer Styles */
+/* =====================
+   Footer Styles – Professional & Modern
+   ===================== */
+
 footer {
-    background-color: #121212; 
+    background-color: #121212; /* Deep black for elegance */
     color: #ffffff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    padding: 60px 20px 20px;
 }
 
-/* Footer Container */
-.footer-container {
+/* Main Footer Layout */
+.footer-main {
     max-width: 1200px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333; /* subtle separation from bottom footer */
 }
 
-/* Footer Columns */
-.footer-column {
-    flex: 1;
-    min-width: 200px;
-}
-
-/* Footer Headings */
-.footer-column h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
+/* Branding / Logo Section */
+.footer-branding .footer-logo {
+    font-size: 28px;
+    font-weight: bold;
     color: #d8b800; /* Gold accent */
+    margin-bottom: 10px;
+}
+
+.footer-branding p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Quick Links & Contact & Social Sections */
+footer h4 {
+    color: #d8b800;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
-/* Footer Links */
-.footer-column ul {
+footer a {
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+/* Quick Links */
+.footer-links ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-column ul li {
+.footer-links ul li {
     margin-bottom: 10px;
 }
 
-.footer-column ul li a {
+.footer-links ul li a {
     color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
 }
 
-.footer-column ul li a:hover {
-    color: #d8b800; /* Gold hover effect */
+.footer-links ul li a:hover {
+    color: #d8b800;
+    transform: translateX(3px);
 }
 
 /* Contact Info */
-.footer-contact p {
-    margin-bottom: 10px;
-    color: #cccccc;
+.footer-contact p, 
+.footer-contact a {
+    color: #ccc;
+    font-size: 14px;
 }
 
-/* Social Media Icons (assume you add icons as <a> links) */
-.footer-social a {
-    color: #ffffff;
-    margin-right: 15px;
-    font-size: 20px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-social a:hover {
+.footer-contact a:hover {
     color: #d8b800;
 }
 
-/* Bottom Footer / Copyright */
+/* Social Buttons */
+.footer-social a.social-btn {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 8px 15px;
+    border: 1px solid #d8b800;
+    border-radius: 5px;
+    color: #d8b800;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.footer-social a.social-btn:hover {
+    background-color: #d8b800;
+    color: #121212;
+    transform: scale(1.1);
+}
+
+/* Bottom Footer */
 .footer-bottom {
     text-align: center;
     margin-top: 30px;
-    border-top: 1px solid #333333;
-    padding-top: 20px;
-    font-size: 14px;
-    color: #aaaaaa;
+    font-size: 13px;
+    color: #888;
 }
 
-/* Responsive Adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
+    .footer-main {
+        grid-template-columns: 1fr;
         text-align: center;
+        gap: 30px;
     }
     
-    .footer-column {
-        margin-bottom: 25px;
-    }
-    
-    .footer-social a {
-        margin-right: 10px;
+    .footer-social a.social-btn {
+        margin: 5px;
     }
 }

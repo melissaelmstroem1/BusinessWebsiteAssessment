@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Rejewlr</title>
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/footer.css"> <!-- Footer styling -->
 </head>
 <body>
 
+<!-- Navbar Placeholder -->
 <div id="navbar-placeholder"></div>
 
+<!-- Hero Section -->
+<header class="hero">
+    <h1>Our Portfolio</h1>
+    <p>A showcase of beautifully redesigned and restored jewellery pieces.</p>
+</header>
+
+<!-- Portfolio Grid Section -->
+<section class="portfolio-grid">
+    <div class="portfolio-item"><img src="https://www.jewellerybox.co.uk/cdn/shop/files/9CT-HOOP-001_9ct_Yellow_Gold_Plain_10mm_Hoop_Earrings_a7eee980-776b-4345-9833-4fcbf68418bf.jpg?v=1740456237" alt=""></div>
+    <div class="portfolio-item"><img src="https://jewellerybyrococo.com/cdn/shop/files/rockring_1080x.jpg?v=1743773390" alt=""></div>
+    <div class="portfolio-item"><img src="https://tillysveaas.co.uk/wp-content/uploads/2019/05/Tilly-sveaas-jewellery-Gold-slim-oval-band-ring-2-450x600.jpg" alt=""></div>
+    <div class="portfolio-item"><img src="https://thejewelleryroom.com/cdn/shop/products/BLAST_Bracelet_-_18k_gold-Bracelets-OXY18CBL10003_1024x1024_3eb3b236-a771-441f-a3ed-50cfa2aba013_600x600_crop_center.jpg?v=1685439274" alt=""></div>
+    <div class="portfolio-item"><img src="https://www.wjsutton.co.uk/wp-content/uploads/2023/02/gold-hoop-earrings-ge83.webp" alt=""></div>
+    <div class="portfolio-item"><img src="https://i.ebayimg.com/images/g/I-4AAOSwIMxn0Qi7/s-l400.jpg" alt=""></div>
+    <div class="portfolio-item"><img src="https://equinesilver.co.uk/media/catalog/product/b/r/br683-02.jpg" alt=""></div>
+    <div class="portfolio-item"><img src="https://s1.apart.pl/products/jewellery/packshot/35736/apart-z-666-01--0_b.jpg" alt=""></div>
+    <div class="portfolio-item"><img src="https://i.etsystatic.com/25998097/r/il/07dced/2798060218/il_340x270.2798060218_rsjb.jpg" alt=""></div>
+</section>
+
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
 <script src="js/scripts.js"></script>
 <script>
+    // Load Navbar
     fetch('navbar.html')
         .then(response => response.text())
         .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading navbar:', err));
+
+    // Load Footer
     fetch('footer.html')
         .then(response => response.text())
         .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading footer:', err));
 </script>
-
-    <header class="hero">
-        <h1>Our Portfolio</h1>
-        <p>A showcase of beautifully redesigned and restored jewellery pieces.</p>
-    </header>
-
-    <section class="portfolio-grid">
-
-        <div class="portfolio-item"><img src="https://www.jewellerybox.co.uk/cdn/shop/files/9CT-HOOP-001_9ct_Yellow_Gold_Plain_10mm_Hoop_Earrings_a7eee980-776b-4345-9833-4fcbf68418bf.jpg?v=1740456237" alt=""></div>
-        <div class="portfolio-item"><img src="https://jewellerybyrococo.com/cdn/shop/files/rockring_1080x.jpg?v=1743773390" alt=""></div>
-        <div class="portfolio-item"><img src="https://tillysveaas.co.uk/wp-content/uploads/2019/05/Tilly-sveaas-jewellery-Gold-slim-oval-band-ring-2-450x600.jpg" alt=""></div>
-
-        <div class="portfolio-item"><img src="https://thejewelleryroom.com/cdn/shop/products/BLAST_Bracelet_-_18k_gold-Bracelets-OXY18CBL10003_1024x1024_3eb3b236-a771-441f-a3ed-50cfa2aba013_600x600_crop_center.jpg?v=1685439274" alt=""></div>
-        <div class="portfolio-item"><img src="https://www.wjsutton.co.uk/wp-content/uploads/2023/02/gold-hoop-earrings-ge83.webp" alt=""></div>
-        <div class="portfolio-item"><img src="https://i.ebayimg.com/images/g/I-4AAOSwIMxn0Qi7/s-l400.jpg" alt=""></div>
-
-        <div class="portfolio-item"><img src="https://equinesilver.co.uk/media/catalog/product/b/r/br683-02.jpg" alt=""></div>
-        <div class="portfolio-item"><img src="https://s1.apart.pl/products/jewellery/packshot/35736/apart-z-666-01--0_b.jpg" alt=""></div>
-        <div class="portfolio-item"><img src="https://i.etsystatic.com/25998097/r/il/07dced/2798060218/il_340x270.2798060218_rsjb.jpg" alt=""></div>
-
-    </section>
-
-    <div id="footer-placeholder"></div>
 </body>
 </html>

@@ -5,95 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services – Rejewlr</title>
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/footer.css"> <!-- Footer styling -->
 </head>
 <body>
 
+<!-- Navbar Placeholder -->
 <div id="navbar-placeholder"></div>
 
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Our Services</h1>
+        <p>Expert jewellery redesign, restoration, and personalised re-creation tailored uniquely to you.</p>
+    </div>
+</section>
+
+<!-- Service Images -->
+<section class="service-images">
+    <img src="https://www.caratlane.com/blog/wp-content/uploads/2025/04/plain-gold-jewellery.jpg" alt="Jewellery Image 1">
+    <img src="https://www.thelocaledit.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fy37odsz4p1zv%2F46zhctWsYSYqpwozCKe0hq%2Fafac91f8ff40cfc29710942b8e652016%2F3.jpg&w=3840&q=80" alt="Jewellery Image 2">
+    <img src="https://dylanoaks.co.uk/cdn/shop/files/ropenecklacegold_2304x2304_crop_center.jpg?v=1714566553" alt="Jewellery Image 3">
+</section>
+
+<!-- Intro Section -->
+<section class="service-intro">
+    <h2>What We Offer</h2>
+    <p>
+        At Rejewlr, we transform your old, unused, or inherited jewellery into 
+        modern pieces that reflect your personality and style. Whether you want a subtle refresh 
+        or a completely new bespoke design, our expert jewellers offer premium, detail-driven services.
+    </p>
+</section>
+
+<!-- Services Grid -->
+<section class="services-grid">
+    <div class="service-card">
+        <h3>Jewellery Redesign</h3>
+        <p>Upload your existing piece and let us craft a completely fresh design, tailored to your preferences and unique style.</p>
+    </div>
+    <div class="service-card">
+        <h3>Resizing & Repairs</h3>
+        <p>From resizing rings to repairing delicate chains, we restore your jewellery to perfect condition.</p>
+    </div>
+    <div class="service-card">
+        <h3>Melting & Recasting</h3>
+        <p>Turn old gold or silver into a brand-new piece. We melt, purify, and reshape your material with expert precision.</p>
+    </div>
+    <div class="service-card">
+        <h3>Custom Bespoke Designs</h3>
+        <p>Work directly with our designers to bring your dream jewellery idea to life from scratch.</p>
+    </div>
+    <div class="service-card">
+        <h3>Stone Resetting</h3>
+        <p>Give your gemstones a new home with modern settings and secure, elegant craftsmanship.</p>
+    </div>
+    <div class="service-card">
+        <h3>Virtual Consultations</h3>
+        <p>Get expert advice online — no need to visit in person. Share photos and ideas from anywhere.</p>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+    <h2>Ready to Transform Your Jewellery?</h2>
+    <a href="contact.html" class="cta-button">Contact Us</a>
+</section>
+
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
 <script src="js/scripts.js"></script>
 <script>
+    // Load Navbar
     fetch('navbar.html')
         .then(response => response.text())
         .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading navbar:', err));
+
+    // Load Footer
     fetch('footer.html')
         .then(response => response.text())
         .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading footer:', err));
 </script>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Our Services</h1>
-            <p>Expert jewellery redesign, restoration, and personalised re-creation tailored uniquely to you.</p>
-        </div>
-    </section>
-
-    <section class="service-images">
-        <img src="https://www.caratlane.com/blog/wp-content/uploads/2025/04/plain-gold-jewellery.jpg" alt="Jewellery Image 1">
-        <img src="https://www.thelocaledit.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fy37odsz4p1zv%2F46zhctWsYSYqpwozCKe0hq%2Fafac91f8ff40cfc29710942b8e652016%2F3.jpg&w=3840&q=80" alt="Jewellery Image 2">
-        <img src="https://dylanoaks.co.uk/cdn/shop/files/ropenecklacegold_2304x2304_crop_center.jpg?v=1714566553" alt="Jewellery Image 3">
-    </section>
-
-    <section class="service-intro">
-        <h2>What We Offer</h2>
-        <p>
-            At Rejewlr, we transform your old, unused, or inherited jewellery into 
-            modern pieces that reflect your personality and style. Whether you want a subtle refresh 
-            or a completely new bespoke design, our expert jewellers offer premium, detail-driven services.
-        </p>
-    </section>
-
-    <section class="services-grid">
-        <div class="service-card">
-            <h3>Jewellery Redesign</h3>
-            <p>
-                Upload your existing piece and let us craft a completely fresh design, tailored 
-                to your preferences and unique style.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Resizing & Repairs</h3>
-            <p>
-                From resizing rings to repairing delicate chains, we restore your jewellery to perfect condition.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Melting & Recasting</h3>
-            <p>
-                Turn old gold or silver into a brand-new piece. We melt, purify, and reshape your material with expert precision.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Custom Bespoke Designs</h3>
-            <p>
-                Work directly with our designers to bring your dream jewellery idea to life from scratch.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Stone Resetting</h3>
-            <p>
-                Give your gemstones a new home with modern settings and secure, elegant craftsmanship.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Virtual Consultations</h3>
-            <p>
-                Get expert advice online — no need to visit in person. Share photos and ideas from anywhere.
-            </p>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <h2>Ready to Transform Your Jewellery?</h2>
-        <a href="contact.html" class="cta-button">Contact Us</a>
-    </section>
-
-    <div id="footer-placeholder"></div>
 </body>
 </html>

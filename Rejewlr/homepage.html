@@ -5,22 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejewlr – Personalised Jewellery Redesign</title>
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/footer.css"> <!-- NEW -->
 </head>
 <body>
 
 <div id="navbar-placeholder"></div>
-
-<script src="js/scripts.js"></script>
-<script>
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
-        .catch(err => console.error('Error loading navbar:', err));
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
-        .catch(err => console.error('Error loading footer:', err));
-</script>
 
 <section class="hero">
     <h2>Transform Your Old Jewellery Into Something New</h2>
@@ -62,7 +51,20 @@
     <p>"Rejewlr gave my grandmother’s ring a stunning modern redesign!" – Clara H.</p>
 </section>
 
-<script src="js/scripts.js"></script>
+<!-- ONLY THIS FOOTER PLACEHOLDER -->
 <div id="footer-placeholder"></div>
+
+<script src="js/scripts.js"></script>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
+        .catch(err => console.error('Error loading navbar:', err));
+    
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
+        .catch(err => console.error('Error loading footer:', err));
+</script>
 </body>
 </html>
