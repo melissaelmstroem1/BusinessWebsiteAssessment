@@ -1,3 +1,4 @@
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,126 +8,129 @@
 body {
     font-family: Arial, sans-serif;
     background: white;
-    color: #333;
-    line-height: 1.6;
+
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
-/* --- UNIVERSAL NAVBAR --- */
-/* Navbar */
+/* Navbar (Universal) */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    /* Transparent background */
 }
 
 .navbar .logo {
     font-size: 1.8rem;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 22px;
 }
 
 .navbar ul li a {
-    color: black; 
+    color: black;
     text-decoration: none;
     padding: 8px 12px;
-    border-radius: 4px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-/* Hover takes priority over active */
 .navbar ul li a:hover {
-    color: #d8b800; /* Hover colour */
+    color: gold;
 }
 
 .navbar ul li a.active {
-    color: black; /* Default colour */
+    color: black;
 }
 
-/* Ensure hover works even if active */
 .navbar ul li a.active:hover {
-    color: #b49900;
+    color: gold;
 }
 
-/* CTA button in navbar */
 .cta-btn {
     font-weight: bold;
 }
 
 .cta-btn:hover {
-    color: #d8b800;
+    color: gold;
 }
 
-
-/* --- UNIVERSAL FOOTER --- */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    border-top: 1px solid #d3d3d3;
-    color: #333;
-}
-
-/* HERO SECTION */
+/* Hero Section */
 .hero {
-    background: url('images/gold-bg.jpg') center/cover no-repeat;
-    height: 45vh;
+    background: white; 
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    animation: fadeIn 1.2s ease;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.45);
+    display: none; 
 }
 
 .hero-text {
     position: relative;
-    color: white;
+    color: #333; 
     text-align: center;
-    max-width: 600px;
-    padding: 0 20px;
+    max-width: 650px;
+    padding: 10px 20px;
+    animation: slideUp 1.2s ease;
 }
 
 .hero-text h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #333;
 }
 
 .hero-text p {
     font-size: 18px;
+    color: #555;
 }
 
-/* SECTION HEADINGS */
+
+/* Section Headers */
 section h2 {
     text-align: center;
-    margin: 40px 0 20px;
-    font-size: 28px;
-    color: #333;
+    margin: 60px 0 25px;
+    font-size: 32px;
+    position: relative;
 }
 
-/* MISSION */
+section h2::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background: #b49900;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Mission section */
 .mission {
     max-width: 900px;
     margin: auto;
     text-align: center;
     padding: 20px;
+    animation: fadeIn 1s ease;
 }
 
-/* PROCESS */
+.mission p {
+    font-size: 18px;
+}
+
+/* Process section (Gold hover glow) */
 .process {
-    padding: 30px 10px;
+    padding: 40px 15px 60px;
 }
 
 .steps-container {
@@ -139,47 +143,107 @@ section h2 {
 
 .step {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px 20px;
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(218,165,32,0.35);
 }
 
 .step h3 {
     color: #b8860b;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
-/* WHY US */
+.step p {
+    font-size: 15px;
+    color: #444;
+}
+
+/* Why Us Section */
 .why-us {
     max-width: 900px;
     margin: auto;
-    padding: 20px;
+    padding: 30px 20px;
+    animation: fadeIn 1s ease;
 }
 
 .why-us ul {
     list-style: none;
-    padding: 0;
 }
 
 .why-us li {
-    margin: 10px 0;
     font-size: 18px;
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
 }
 
-/* STORY */
+.why-us li::before {
+    content: "◆";
+    color: gold;
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    top: 4px;
+}
+
+/* Story Section */
 .story {
     max-width: 900px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 30px 20px 60px;
     text-align: center;
+    animation: fadeIn 1s ease;
 }
 
-/* FOOTER */
+.story p {
+    font-size: 18px;
+    color: #444;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background: #222;
     color: white;
     margin-top: 50px;
+    letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
 }
