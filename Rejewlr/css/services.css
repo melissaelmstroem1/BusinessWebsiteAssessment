@@ -1,3 +1,4 @@
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: white;
+    background: #ffffff;
     color: #333;
     line-height: 1.6;
+    font-size: 16px; /* Base font size */
 }
 
-/* Universal Navbar */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -34,6 +36,7 @@ body {
     color: black;
     text-decoration: none;
     padding: 8px 12px;
+    border-radius: 4px;
     transition: color 0.3s ease;
 }
 
@@ -52,30 +55,33 @@ body {
 /* Hero Section */
 .hero {
     background: white;
-    height: 35vh;
+    min-height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     animation: fadeIn 1.2s ease;
+    padding: 40px 20px;
 }
 
 .hero-text h1 {
-    font-size: 40px;
+    font-size: 2.2rem;
     color: #e3dc07;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 1rem;
     color: #555;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-/* Images Under Intro */
+/* Service Images */
 .service-images {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     margin: 30px auto;
     max-width: 1000px;
 }
@@ -85,11 +91,12 @@ body {
     border: 3px solid #d3d3d3;
     border-radius: 10px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-images img:hover {
     transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 /* Intro Section */
@@ -101,11 +108,13 @@ body {
 }
 
 .service-intro h2 {
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 15px;
+    color: #e3dc07;
 }
 
 .service-intro p {
+    font-size: 1rem;
     color: #555;
 }
 
@@ -131,11 +140,12 @@ body {
 
 .service-card h3 {
     color: #e3dc07;
-    font-size: 22px;
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
 .service-card p {
+    font-size: 1rem;
     color: #555;
 }
 
@@ -145,7 +155,7 @@ body {
     border-color: #e3dc07;
 }
 
-/* CTA section */
+/* CTA Section */
 .cta-section {
     text-align: center;
     padding: 60px 20px;
@@ -159,13 +169,13 @@ body {
     color: black;
     padding: 12px 25px;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-decoration: none;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background: #e3dc07;
+    background: #b49900;
 }
 
 /* Footer */
@@ -175,10 +185,31 @@ footer {
     color: #333;
     border-top: 1px solid #d3d3d3;
     margin-top: 50px;
+    font-size: 0.95rem;
 }
 
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    .service-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-images img {
+        width: 80%;
+    }
 }

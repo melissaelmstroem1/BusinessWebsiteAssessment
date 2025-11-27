@@ -1,4 +1,4 @@
-/*basic styling */
+/* Reset & Base */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +10,7 @@ body {
     background-color: #ffffff; 
     color: #333;
     line-height: 1.6;
+    font-size: 16px; /* Base font size */
 }
 
 /* Navbar */
@@ -18,7 +19,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    /* Transparent background */
 }
 
 .navbar .logo {
@@ -33,23 +33,21 @@ body {
 }
 
 .navbar ul li a {
-    color: black; 
+    color: black;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 4px;
     transition: color 0.3s;
 }
 
-/* Hover takes priority over active */
 .navbar ul li a:hover {
-    color: #e3dc07; /* Hover colour */
+    color: #e3dc07; /* Hover gold */
 }
 
 .navbar ul li a.active {
-    color: black; /* Default colour */
+    color: black;
 }
 
-/* Ensure hover works even if active */
 .navbar ul li a.active:hover {
     color: #e3dc07;
 }
@@ -61,48 +59,45 @@ body {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 60px 20px 40px;
-    border-bottom: 1px solid #d3d3d3; /* Light grey border between sections */
+    padding: 80px 20px 60px;
+    border-bottom: 1px solid #d3d3d3;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Consistent main heading size */
     margin-bottom: 20px;
     color: #e3dc07;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #333;
+    font-size: 1rem; /* Paragraph standard size */
+    margin-bottom: 40px;
+    color: #666;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Slideshow */
-
-/* Slideshow Container */
 .slideshow-container {
     position: relative;
-    max-width: 900px; /* Max width of slideshow */
-    margin: 20px auto 40px; /* Centered with spacing */
+    max-width: 900px;
+    margin: 0 auto 60px;
     overflow: hidden;
     border-radius: 10px;
 }
 
-/* All slides hidden by default */
 .slide {
     display: none;
 }
 
-/* All images same size */
 .slide img {
     width: 100%;
-    max-height: 400px; /* Consistent height */
-    object-fit: cover; 
-    display: block;
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-/* Fade animation */
 .fade {
     animation: fade 3s infinite;
 }
@@ -135,7 +130,7 @@ body {
     text-decoration: none;
     color: #333;
     width: 250px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
     text-align: center;
 }
 
@@ -146,11 +141,16 @@ body {
 }
 
 .card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem; /* Consistent subheading */
+    margin-bottom: 12px;
 }
 
-/* Social proof */
+.card p {
+    font-size: 0.95rem; /* Slightly smaller for readability */
+    line-height: 1.4;
+}
+
+/* Social Proof Section */
 .social-proof {
     text-align: center;
     padding: 60px 20px;
@@ -163,10 +163,11 @@ body {
 }
 
 .social-proof p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
     max-width: 600px;
     margin: 0 auto;
+    line-height: 1.5;
 }
 
 /* Footer */
@@ -175,12 +176,33 @@ footer {
     padding: 20px;
     margin-top: 40px;
     border-top: 1px solid #d3d3d3;
+    font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 900px) {
     .cards-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .social-proof h3 {
+        font-size: 1.5rem;
+    }
+
+    .social-proof p {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        width: 90%;
     }
 }
