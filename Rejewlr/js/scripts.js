@@ -15,3 +15,17 @@ function showSlides() {
 
     setTimeout(showSlides, 3000); // Change slide every 3 seconds
 }
+
+// Load navbar dynamically
+function includeNavbar() {
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading navbar:', err));
+}
+
+// Call the function
+includeNavbar();
+

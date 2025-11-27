@@ -52,10 +52,6 @@ body {
     color: gold;
 }
 
-.cta-btn {
-    font-weight: bold;
-}
-
 .cta-btn:hover {
     color: gold;
 }
@@ -88,7 +84,7 @@ body {
     font-size: 40px;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    color: #333;
+    color: #e3dc07;;
 }
 
 .hero-text p {
@@ -109,7 +105,7 @@ section h2::after {
     content: "";
     width: 70px;
     height: 3px;
-    background: #b49900;
+    background: #e3dc07;
     display: block;
     margin: 10px auto 0;
     border-radius: 2px;
@@ -156,7 +152,7 @@ section h2::after {
 }
 
 .step h3 {
-    color: #b8860b;
+    color: #e3dc07;
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -187,7 +183,7 @@ section h2::after {
 
 .why-us li::before {
     content: "◆";
-    color: gold;
+    color: #e3dc07;
     position: absolute;
     left: 0;
     font-size: 12px;

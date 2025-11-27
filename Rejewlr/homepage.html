@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="css/homepage.css">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Rejewlr</h1>
-        <ul>
-            <li><a href="homepage.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="cta-btn">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+
+<div id="navbar-placeholder"></div>
+
+<script src="js/scripts.js"></script>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
+        .catch(err => console.error('Error loading navbar:', err));
+</script>
 
 <section class="hero">
     <h2>Transform Your Old Jewellery Into Something New</h2>
