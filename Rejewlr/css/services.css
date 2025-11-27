@@ -75,6 +75,27 @@ body {
     color: #555;
 }
 
+/* Images Under Intro */
+.service-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.service-images img {
+    width: 30%;
+    border: 3px solid #d3d3d3;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-images img:hover {
+    transform: scale(1.03);
+}
+
 /* Intro Section */
 .service-intro {
     max-width: 900px;
