@@ -41,7 +41,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 .navbar ul li a.active {
@@ -49,11 +49,11 @@ body {
 }
 
 .navbar ul li a.active:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 .cta-btn:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 /* Hero Section */
@@ -75,7 +75,7 @@ body {
 
 .hero-text h1 {
     font-size: 2.2rem;
-    color: #e3dc07;
+    color: #8ec8ee;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
@@ -97,7 +97,7 @@ section h2::after {
     content: "";
     width: 70px;
     height: 3px;
-    background: #e3dc07;
+    background: #8ec8ee;
     display: block;
     margin: 10px auto 0;
     border-radius: 2px;
@@ -145,7 +145,7 @@ section h2::after {
 }
 
 .step h3 {
-    color: #e3dc07;
+    color: #8ec8ee;
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
@@ -180,7 +180,7 @@ section h2::after {
 
 .why-us li::before {
     content: "◆";
-    color: #e3dc07;
+    color: #8ec8ee;
     position: absolute;
     left: 0;
     font-size: 0.8rem;

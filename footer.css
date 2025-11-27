@@ -23,7 +23,7 @@ footer {
 .footer-branding .footer-logo {
     font-size: 28px;
     font-weight: bold;
-    color: #e3dc07; 
+    color: #8ec8ee; 
     margin-bottom: 10px;
 }
 
@@ -34,7 +34,7 @@ footer {
 
 /* Quick Links & Contact & Social Sections */
 footer h4 {
-    color: #e3dc07;
+    color: #8ec8ee;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -61,7 +61,7 @@ footer a {
 }
 
 .footer-links ul li a:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
     transform: translateX(3px);
 }
 
@@ -73,7 +73,7 @@ footer a {
 }
 
 .footer-contact a:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 /* Social Buttons */
@@ -81,15 +81,15 @@ footer a {
     display: inline-block;
     margin-right: 12px;
     padding: 8px 15px;
-    border: 1px solid #e3dc07;
+    border: 1px solid #8ec8ee;
     border-radius: 5px;
-    color: #e3dc07;
+    color: #8ec8ee;
     font-size: 14px;
     transition: all 0.3s;
 }
 
 .footer-social a.social-btn:hover {
-    background-color: #e3dc07;
+    background-color: #8ec8ee;
     color: #121212;
     transform: scale(1.1);
 }

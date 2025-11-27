@@ -40,7 +40,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 .navbar ul li a.active {
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar ul li a.active:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 /* Hero Section */
@@ -65,7 +65,7 @@ body {
 
 .hero-text h1 {
     font-size: 2.2rem;
-    color: #e3dc07;
+    color: #8ec8ee;
     margin-bottom: 15px;
 }
 
@@ -109,7 +109,7 @@ body {
 .service-intro h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 .service-intro p {
@@ -138,7 +138,7 @@ body {
 }
 
 .service-card h3 {
-    color: #e3dc07;
+    color: #8ec8ee;
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
@@ -151,7 +151,7 @@ body {
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-    border-color: #e3dc07;
+    border-color: #8ec8ee;
 }
 
 /* CTA Section */
@@ -164,7 +164,7 @@ body {
 .cta-button {
     display: inline-block;
     margin-top: 15px;
-    background: #e3dc07;
+    background: #8ec8ee;
     color: black;
     padding: 12px 25px;
     border-radius: 6px;
@@ -174,7 +174,7 @@ body {
 }
 
 .cta-button:hover {
-    background: #b49900;
+    background: #8ec8ee;
 }
 
 /* Footer */

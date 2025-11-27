@@ -50,7 +50,7 @@
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: #e3dc07; 
+    background-color: #8ec8ee; 
     transition: width 0.3s ease;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .navbar ul li a:hover {
-    color: #e3dc07;
+    color: #8ec8ee;
 }
 
 /* Hamburger Menu For Mobile */
