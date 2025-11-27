@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- UNIVERSAL NAVBAR --- */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    /* Transparent background */
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: black; 
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.3s;
+}
+
+/* Hover takes priority over active */
+.navbar ul li a:hover {
+    color: #d8b800; /* Hover colour */
+}
+
+.navbar ul li a.active {
+    color: black; /* Default colour */
+}
+
+/* Ensure hover works even if active */
+.navbar ul li a.active:hover {
+    color: #b49900;
+}
+
+/* CTA button in navbar */
+.cta-btn {
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    color: #d8b800;
+}
+
+
+/* --- UNIVERSAL FOOTER --- */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #d3d3d3;
+    color: #333;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('images/gold-bg.jpg') center/cover no-repeat;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* MISSION */
+.mission {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* PROCESS */
+.process {
+    padding: 30px 10px;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.step {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.step h3 {
+    color: #b8860b;
+    margin-bottom: 10px;
+}
+
+/* WHY US */
+.why-us {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-us li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* STORY */
+.story {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 50px;
+}

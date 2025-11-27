@@ -42,7 +42,7 @@ body {
 
 /* Hover takes priority over active */
 .navbar ul li a:hover {
-    color: gold; /* Hover colour */
+    color: #d8b800; /* Hover colour */
 }
 
 .navbar ul li a.active {
@@ -51,7 +51,7 @@ body {
 
 /* Ensure hover works even if active */
 .navbar ul li a.active:hover {
-    color: gold;
+    color: #b49900;
 }
 
 /* CTA button in navbar */
@@ -60,7 +60,7 @@ body {
 }
 
 .cta-btn:hover {
-    color: gold;
+    color: #d8b800;
 }
 
 /* Hero Section */
@@ -73,7 +73,7 @@ body {
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #4a148c;
+    color: #d8b800;
 }
 
 .hero p {
@@ -147,7 +147,7 @@ body {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    color: gold;
+    color: #d8b800;
 }
 
 .card h3 {
@@ -164,7 +164,7 @@ body {
 .social-proof h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #4a148c;
+    color: #d8b800;
 }
 
 .social-proof p {
