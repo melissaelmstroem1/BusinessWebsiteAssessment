@@ -16,6 +16,11 @@
         .then(response => response.text())
         .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading navbar:', err));
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
+        .catch(err => console.error('Error loading footer:', err));
 </script>
 
     <section class="hero">
@@ -85,9 +90,6 @@
         </p>
     </section>
 
-    <footer>
-        <p>© 2025 ReDesign Jewellery — All Rights Reserved.</p>
-    </footer>
-
+    <div id="footer-placeholder"></div>
 </body>
 </html>

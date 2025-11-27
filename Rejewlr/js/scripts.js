@@ -26,6 +26,16 @@ function includeNavbar() {
         .catch(err => console.error('Error loading navbar:', err));
 }
 
+// Load footer dynamically
+function includeFooter() {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading footer:', err));
+}
+
 // Call the function
 includeNavbar();
 

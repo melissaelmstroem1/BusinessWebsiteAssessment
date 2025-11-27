@@ -16,6 +16,10 @@
         .then(response => response.text())
         .then(data => { document.getElementById('navbar-placeholder').innerHTML = data; })
         .catch(err => console.error('Error loading navbar:', err));
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => { document.getElementById('footer-placeholder').innerHTML = data; })
+        .catch(err => console.error('Error loading footer:', err));
 </script>
 
     <header class="hero">
@@ -75,10 +79,6 @@
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 ReDesign Jewellery | All rights reserved</p>
-    </footer>
-
     <script>
         const form = document.getElementById('contactForm');
         const successMsg = document.getElementById('successMsg');
@@ -90,5 +90,6 @@
         });
     </script>
 
+    <div id="footer-placeholder"></div>
 </body>
 </html>
