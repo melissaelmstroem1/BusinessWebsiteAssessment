@@ -1,0 +1,191 @@
+/*basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    /* Transparent background */
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: black; 
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.3s;
+}
+
+/* Hover takes priority over active */
+.navbar ul li a:hover {
+    color: gold; /* Hover colour */
+}
+
+.navbar ul li a.active {
+    color: black; /* Default colour */
+}
+
+/* Ensure hover works even if active */
+.navbar ul li a.active:hover {
+    color: gold;
+}
+
+/* CTA button in navbar */
+.cta-btn {
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    color: gold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 1px solid #d3d3d3; /* Light grey border between sections */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4a148c;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Slideshow */
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 900px; /* Max width of slideshow */
+    margin: 20px auto 40px; /* Centered with spacing */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* All slides hidden by default */
+.slide {
+    display: none;
+}
+
+/* All images same size */
+.slide img {
+    width: 100%;
+    max-height: 400px; /* Consistent height */
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px;
+}
+
+/* Fade animation */
+.fade {
+    animation: fade 3s infinite;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+    66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* Cards Section */
+.cards-section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fafafa;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: gold;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Social proof */
+.social-proof {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.social-proof h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a148c;
+}
+
+.social-proof p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #d3d3d3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
