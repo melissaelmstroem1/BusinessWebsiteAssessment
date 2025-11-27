@@ -161,10 +161,14 @@ section h2::after {
     margin: auto;
     padding: 30px 20px;
     animation: fadeIn 1s ease;
+    text-align: center;
 }
 
 .why-us ul {
     list-style: none;
+    padding: 0;
+    display: inline-block; 
+    text-align: left; 
 }
 
 .why-us li {
