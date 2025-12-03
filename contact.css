@@ -40,7 +40,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 .navbar ul li a.active {
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar ul li a.active:hover {
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 /* Hero Section */
@@ -59,7 +59,7 @@ body {
 
 .hero h1 {
     font-size: 2.2rem;
-    color: #8ec8ee;
+    color: #88c3eb;
     margin-bottom: 15px;
 }
 
@@ -92,7 +92,7 @@ body {
 .contact-form h2 {
     margin-bottom: 20px;
     font-size: 1.5rem;
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 .contact-form label {
@@ -116,7 +116,7 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #8ec8ee;
+    border-color: #88c3eb;
     box-shadow: 0 0 6px rgba(184,134,11,0.3);
 }
 
@@ -139,7 +139,7 @@ body {
 }
 
 .contact-form button:hover {
-    background: #8ec8ee;
+    background: #88c3eb;
 }
 
 /* Success Message */
@@ -168,7 +168,7 @@ body {
 .contact-info h2 {
     margin-bottom: 15px;
     font-size: 1.5rem;
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 .contact-info p {
@@ -203,7 +203,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.5rem;
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 .map-container iframe {

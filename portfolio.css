@@ -41,7 +41,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 .navbar ul li a.active {
@@ -49,7 +49,7 @@ body {
 }
 
 .navbar ul li a.active:hover {
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 .cta-btn {
@@ -58,7 +58,7 @@ body {
 }
 
 .cta-btn:hover {
-    color: #8ec8ee;
+    color: #88c3eb;
 }
 
 /* Hero Section */
@@ -70,7 +70,7 @@ body {
 
 .hero h1 {
     font-size: 2.2rem;
-    color: #8ec8ee;
+    color: #88c3eb;
     margin-bottom: 15px;
 }
 
